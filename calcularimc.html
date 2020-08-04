@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular IMC</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/function.js"></script>
+</head>
+
+<body>
+    <section>
+        <header>
+            <H1>Vamos Cálcular seu IMC?</H1>
+        </header>
+        <article>
+            <div class="explicaImc">
+                <h4>Cálculo IMC</h4>
+                <p>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.</p>
+                <p>O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.</p>
+                <p>Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e compare com os índices da tabela. Importante: siga os exemplos e use pontos como separadores.</p>
+                <form>
+                    <label for="altura">Altura (ex.:1.70)</label>
+                    <input type="text" id="altura_input" name="altura" placeholder="Metros">
+                    <label for="peso">Peso (ex.:64.5)</label>
+                    <input type="text" id="peso_input" placeholder="Kilos"><br><br>
+                    <input type="submit" onclick="calcImc(); return false;" value="Cálcular" ;>
+                    <input type="reset" onclick="resetar();" value="Limpar"><br>
+                    <div id="span">
+                        <span id="resultadoIMc">Seu IMC:</span>
+                        <label id="imc"></label>
+                    </div>
+                </form>
+
+            </div>
+
+        </article>
+
+
+
+        <footer>
+            <small>© Todos os direitos reservados.</small>
+        </footer>
+    </section>
+</body>
+
+</html>
