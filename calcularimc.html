@@ -28,12 +28,48 @@
                     <input type="text" id="peso_input" placeholder="Kilos"><br><br>
                     <input type="submit" onclick="calcImc(); return false;" value="Cálcular" ;>
                     <input type="reset" onclick="resetar();" value="Limpar"><br>
-                    <div id="span">
-                        <span id="resultadoIMc">Seu IMC:</span>
-                        <label id="imc"></label>
-                    </div>
+
                 </form>
 
+            </div>
+            <div class="tabela">
+                <table id="t01">
+                    <caption>VEJA A INTERPRETAÇÃO DO IMC</caption>
+                    <tr>
+                        <th>IMC</th>
+                        <th>CLASSIFICAÇÃO</th>
+                        <th>OBESIDADE (GRAU)</th>
+                    </tr>
+                    <tr>
+                        <td>MENOR QUE 18,5</td>
+                        <td>MAGREZA</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>ENTRE 18,5 E 24,9</td>
+                        <td>NORMAL</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>ENTRE 25,0 E 29,9</td>
+                        <td>SOBREPESO</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>ENTRE 30,0 E 39,9</td>
+                        <td>OBESIDADE</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>MAIOR QUE 40,0</td>
+                        <td>OBESIDADE GRAVE</td>
+                        <td>3</td>
+                    </tr>
+                </table>
+                <div id="span">
+                    <span id="resultadoIMc">Seu IMC:</span>
+                    <label id="imc"></label>
+                </div>
             </div>
 
         </article>

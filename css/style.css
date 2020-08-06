@@ -1,16 +1,14 @@
 header {
-    color: yellow;
+    color: white;
     background-color: blue;
     padding: 5px;
     text-align: center;
-    border-radius: 10px;
 }
 
 footer {
     background-color: black;
     color: cornsilk;
     text-align: center;
-    border-radius: 10px;
     height: 50px;
     font-size: 18px;
     margin-top: 5px;
@@ -18,7 +16,6 @@ footer {
 
 .explicaImc {
     background-color: rgb(39, 224, 184);
-    border-radius: 10px;
     padding: 5px;
 }
 
@@ -38,4 +35,54 @@ input {
     padding: 5px;
     width: 12%;
     border-radius: 10px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+th,
+td {
+    padding: 15px;
+}
+
+table {
+    border-spacing: 5px;
+}
+
+caption {
+    background-color: blue;
+    color: cornsilk;
+    border-radius: 10px;
+    height: 25px;
+    padding-top: 5px;
+}
+
+#t01 {
+    width: 50%;
+    background-color: #f1f1c1;
+}
+
+#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+
+#t01 tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+#t01 th {
+    color: white;
+    background-color: black;
+}
+
+#t01 {
+    border-radius: 10px;
+}
+
+.tabela {
+    background-color: rgb(39, 224, 184);
+    padding: 5px;
 }
